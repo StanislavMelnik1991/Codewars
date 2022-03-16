@@ -6,4 +6,10 @@ function explode(s) {
     arr = arr.join('');
     return arr;
   }
-  console.log(explode("123"))
+
+
+  butt.onclick = function() {
+    let val = document.getElementById('elem1').value;
+    let output = explode(val);
+    document.getElementById('str').innerHTML=output;
+  };

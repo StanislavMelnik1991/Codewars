@@ -4,8 +4,8 @@ function getParticipants(handshakes){
   
   butt.onclick = function() {
     let val = document.getElementById('elem1').value;
-    let people = getParticipants(val);
-    document.getElementById('str').innerHTML="Людей необходимо: "+people;
-  
-  
+    //
+    let output = getParticipants(val);
+    //
+    document.getElementById('str').innerHTML=output;
   };

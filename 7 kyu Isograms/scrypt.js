@@ -12,3 +12,10 @@ return (lowerStr === output)? true:false;
   }
 
 console.log(isIsogram("isogramMMMMM"))
+butt.onclick = function() {
+  let val = document.getElementById('elem1').value;
+  //
+  let output = isIsogram(val);
+  //
+  document.getElementById('str').innerHTML=output;
+};
