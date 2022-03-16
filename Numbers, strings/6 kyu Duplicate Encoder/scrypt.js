@@ -1,9 +1,10 @@
 function duplicateEncode(word){
-    // ...
-
-
-    
-    return 1
+let result = "" 
+let lowerStr = word.toLowerCase()
+for (let i = 0; i < lowerStr.length; i++) {
+result += lowerStr.split(lowerStr[i]).length<=2?"(":")";
+}
+    return result;
 }
   
   butt.onclick = function() {
@@ -13,3 +14,5 @@ function duplicateEncode(word){
     //
     document.getElementById('str').innerHTML=output;
   };
+
+  
