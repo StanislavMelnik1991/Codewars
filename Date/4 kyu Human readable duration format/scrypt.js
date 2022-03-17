@@ -30,7 +30,7 @@ date = date.filter(Boolean);
 (date.length>1)? date[date.length - 2] = date[date.length - 2] +" and "+ date[date.length - 1]:date[date.length-1] = date[date.length-1];
 (date.length>1)? date[date.length-1] = "":date[date.length-1] = date[date.length-1];
 date = date.filter(Boolean);
-//(date[0] != ""|| date[1] != "" || date[2] != ""|| date[3] != "" )? (date[4] = "and " + date[4]): (result = date[4]);
+
 result = date.join(', ');
 (result === "")?result = "now":false;
 
