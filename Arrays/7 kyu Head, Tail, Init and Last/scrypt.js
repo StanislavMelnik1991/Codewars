@@ -1,33 +1,28 @@
 let result = []
 function head (arr) {
 result = arr[0]
-
-console.log(result + " head")
-console.log(arr)
+//console.log(result + " head")
+//console.log(arr)
   return result
 }
 function tail (arr) {
 result = [...arr]
-result = result.join(',')
-result = result.split(',')
-result.splice(0, 1);
-console.log(result + " tail")
+result.shift();
+console.log(result)
 console.log(arr)
   return result
 }
 function init (arr) {
 result = [...arr]
-result = result.join(',')
-result = result.split(',')
-result.splice(result.length - 1, 1);
-console.log(result + " init");
+result.pop();
+console.log(result);
 console.log(arr);
   return result
 }
 function last (arr) {
 result = arr[arr.length - 1]
-console.log(result + "last")
-console.log(arr)
+//console.log(result + "last")
+//console.log(arr)
   return result
 }
 
