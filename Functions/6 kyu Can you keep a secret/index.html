@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can you keep a secret</title>
+    <link rel="stylesheet" href="../../slyle.css">
+</head>
+<body>
+
+
+    <h1>6 kyu Can you keep a secret</h1>
+    <p>There's no such thing as private properties on a coffeescript object! But, maybe there are?</p>
+    <p>Implement a function createSecretHolder(secret) which accepts any value as secret and returns an object with ONLY two methods</p>
+    <ul>getSecret() which returns the secret</ul>
+    <ul>setSecret() which sets the secret</ul>
+   <div class="code_block">
+       <code>
+        <pre>obj = createSecretHolder(5)</pre>
+        <pre>obj.getSecret() # returns 5</pre>
+        <pre>obj.setSecret(2)</pre>
+        <pre>obj.getSecret() # returns 2</pre>
+       </code>
+    
+    </div>
+
+
+    <input id="elem1" type="text" name="quantity" placeholder="Input">
+    <input id="butt" type="button" value="Calculate"/>
+
+    <br><br>
+    <div id="str"></div>
+    
+</body>
+<script src="scrypt.js"></script>
+</html>
