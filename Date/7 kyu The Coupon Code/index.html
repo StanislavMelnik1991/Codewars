@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coupon Codet</title>
+    <link rel="stylesheet" href="../../slyle.css">
+</head>
+<body>
+    <h1>7 kyu The Coupon Code</h1>
+    <h3>Story</h3>
+    <p>Your online store likes to give out coupons for special occasions. Some customers try to cheat the system by entering invalid codes or using expired coupons.</p>
+    <h3>Task</h3>
+    <p>Your mission:</p>
+    <p>Write a function called checkCoupon which verifies that a coupon code is valid and not expired.</p>
+    <p>A coupon is no more valid on the day AFTER the expiration date. All dates will be passed as strings in this format: "MONTH DATE, YEAR".</p>
+    <h3>Examples:</h3>
+    <div class="code_block">
+        <code>
+         <pre>checkCoupon("123", "123", "July 9, 2015", "July 9, 2015")  ===  true</pre>
+         <pre>checkCoupon("123", "123", "July 9, 2015", "July 2, 2015")  ===  false</pre>
+        </code>
+     
+     </div>
+
+    <input id="elem1" type="text" name="quantity" placeholder="enteredCode"><p></p>
+    <input id="elem2" type="text" name="quantity" placeholder="correctCode"><p></p>
+    <input id="elem3" type="text" name="quantity" placeholder="currentDate"><p></p>
+    <input id="elem4" type="text" name="quantity" placeholder="expirationDate"><p></p>
+    <input id="butt" type="button" value="Calculate"/><br><br>
+    <div id="str"></div>
+    
+</body>
+<script src="scrypt.js"></script>
+</html>
