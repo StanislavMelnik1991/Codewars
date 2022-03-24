@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Recycle!</title>
+    <link rel="stylesheet" href="../../slyle.css">
+</head>
+<body>
+
+
+    <h1>6 kyu Let's Recycle!</h1>
+    <h3>Task</h3>
+    <p>You will be given a list of objects. Each object has type, material, and possibly secondMaterial. The existing materials are: paper, glass, organic, and plastic.</p>
+    <p>Your job is to sort these objects across the 4 recycling bins according to their material (and secondMaterial if it's present), by listing the type's of objects that should go into those bins.</p>
+    <p>Notes</p>
+    <ul>The bins should come in the same order as the materials listed above</ul>
+    <ul>All bins should be listed in the output, even if some of them are empty</ul>
+    <ul>If an object is made of two materials, its type should be listed in both of the respective bins</ul>
+    <ul>The order of the type's in each bin should be the same as the order of their respective objects was in the input list</ul>
+    <p>Example</p>
+    <div class="code_block">
+     <code>
+        <pre>input = [</pre>
+        <pre>{"type": "rotten apples", "material": "organic"},</pre>
+        <pre>{"type": "out of date yogurt", "material": "organic", "secondMaterial": "plastic"},</pre>
+        <pre>{"type": "wine bottle", "material": "glass", "secondMaterial": "paper"},</pre>
+        <pre>{"type": "amazon box", "material": "paper"},</pre>
+        <pre>{"type": "beer bottle", "material": "glass", "secondMaterial": "paper"}</pre>
+        <pre>]</pre>
+        <pre> </pre>
+        <pre>output = [</pre>
+        <pre>["wine bottle", "amazon box", "beer bottle"],</pre>
+        <pre>["wine bottle", "beer bottle"],</pre>
+        <pre>["rotten apples", "out of date yogurt"],</pre>
+        <pre>["out of date yogurt"]</pre>
+        <pre>]</pre>
+     </code>
+     </div>
+
+    <input id="elem1" type="text" name="quantity" placeholder="Input">
+    <input id="butt" type="button" value="Calculate"/>
+    <br><br>
+    <div id="str"></div>
+    
+</body>
+<script src="scrypt.js"></script>
+</html>
